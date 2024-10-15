@@ -158,9 +158,6 @@ class CustomerService {
             case 'CREATE_ORDER':
                 this.ManageOrder(userId,order);
                 break;
-            case 'TEST':
-                console.log("Working...Subcribe");
-                break;
             default:
                 break;
         }

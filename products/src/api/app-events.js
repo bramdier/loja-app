@@ -9,7 +9,7 @@ module.exports = (app) => {
 
         service.SubscribeEvents(payload);
 
-        console.log("============This is App Event Product============");
+        console.log("============This is App Event For Product Service============");
         return res.status(200).json(payload);
         
     })
