@@ -7,6 +7,9 @@
     "start": "NODE_ENV=prod nodemon src/index.js",
     "dev": "NODE_ENV=dev nodemon src/index.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
@@ -19,8 +22,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }

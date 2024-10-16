@@ -1,4 +1,3 @@
-const appEvents = require('./app-events');
 
 module.exports = {
     products: require('./products'),

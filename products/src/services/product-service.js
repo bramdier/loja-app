@@ -1,4 +1,3 @@
-const { products } = require("../api");
 const { ProductRepository } = require("../database");
 const { FormateData } = require("../utils");
 const { APIError } = require('../utils/app-errors');
@@ -76,7 +75,8 @@ class ProductService {
         }
     }
 
-    async GetProductPayload(userId, { productId, qty}, event){
+    async GetProductPayload(userId, { productId, qty}, event) {
+        
         const product = await this.repository.FindById(productId);
 
         if(product){
@@ -86,8 +86,10 @@ class ProductService {
             }
             return FormateData(payload)
         }else{
-            return FormateData({error: 'No Products Available'})
+            return FormateData({error: 'No product available'})
         }
+
+
     }
      
 }

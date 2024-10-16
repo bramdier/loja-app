@@ -144,6 +144,7 @@ class CustomerService {
 
         const { userId, product, order, qty } = data;
 
+
         switch(event){
             case 'ADD_TO_WISHLIST':
             case 'REMOVE_FROM_WISHLIST':
